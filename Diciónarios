@@ -1,0 +1,66 @@
+#DICIONÁRIOS 
+#São coleções de um conjunto de pares chave:valor, com uma restrição de que a chave seja única dentro da coleção 
+#Os dicionários são contruídos utilizando {}
+#Utiliza-se ":" para separar a chave do valor 
+#Sempre o operador a esquerda é a chave e o da direita, o valor 
+#Case sensitive -> identifica a variação de maiúsca e minúscula em uma string (se for uma string)
+
+#exemplo de Dicionários:
+peixes = {"t":"tubarão", "b":"baleia", "a":"atum"}
+f1 = {"1":"Mercedez", "2":"Ferrari"}
+
+#a cheve identifica o valor 
+
+#dicionários mistos: as chaves só não pdem ser iguais 
+
+#ATRIBUIÇÃO E TIPO
+#permite apenas comparação 
+
+#FUNÇÃO DICT()
+#converte uma estrutura de dados para um dicionário 
+#existe duas formas: passar uma lista de argumentos ou um interável
+
+#lista de argumentos
+numeros = dict(um=1, dois=2, tres=3)
+numeros #{'um': 1, 'dois': 2, 'tres': 3}
+
+#interavel
+dic1 = dict([('ana', 342), ('pedro', 3453), ('marcio', 8769)])
+dic1 #{'ana': 342, 'pedro': 3453, 'marcio': 8769}
+
+#INDEXAÇÃO E ALTERAÇÃO
+
+dic1['emylli'] = 123
+dic1 #{'ana': 342, 'pedro': 3453, 'marcio': 8769, 'emylli': 123}
+
+#FUNÇÕES BUILT-IN
+#len() - retorna o tamanho do dicionário (número de pares chave:valor)
+#all() - retorna True se todas as chaves do dicionário forem verdadeiras ou se o dicionário estiver vazio
+#any() - retorna True se qualquer chave do dicionário for verdadeira.
+#sorted() - retorna uma lista modificada (ordenada) de um dicionário baseado em suas chaves. Mantém intacto o dicionário.
+
+presidentes = {'Deodoro':1889, 'Floriano':1891, 'Prudente':1902, 'Campos':1906}
+dic_logico = {0:True, 1:False, 2:True}
+
+presidentes #{'Deodoro': 1889, 'Floriano': 1891, 'Prudente': 1902, 'Campos': 1906}
+sorted(presidentes) #['Campos', 'Deodoro', 'Floriano', 'Prudente']
+sorted(presidentes, reverse=True) #['Prudente', 'Floriano', 'Deodoro', 'Campos']
+sorted(presidentes.values()) #[1889, 1891, 1902, 1906]
+sorted(presidentes.items()) #[('Campos', 1906), ('Deodoro', 1889), ('Floriano', 1891), ('Prudente', 1902)]
+
+#MÉTODOS
+filmes = {'Avatar':2009, 'Titanic':1997, 'Star Wars':1977, 'Matrix':1999}
+
+#clear() - remove todos os itens do dicionário
+#fromkeys() - cria um novo dicionário com as chaves especificadas e valores iguais a None ou ao valor passado
+filmes_novo = filmes.fromkeys(filmes)
+filmes_novo #{'Avatar': None, 'Titanic': None, 'Star Wars': None, 'Matrix': None}
+
+#get() - retorna o valor da chave especificada
+#items () - retorna uma lista contendo um tupla para cada par chave:valor
+#keys() - retorna uma lista contendo as chaves do dicionário
+#values() - retorna uma lista com os valores do dicionário
+#update() - atualiza o dicionário com os pares chave:valor de outro objeto de dicionário 
+#setdefault() - retorna o valor da chave especificada. Se a chave não existir, insere a chave com o valor especificado (padrão None)
+#pop() - remove o item com a chave especificada e retorna o valor correspondente
+#popitem() - remove o último item inserido no dicionário e o retorna como

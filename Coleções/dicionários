@@ -1,0 +1,23 @@
+#Fazer um programa que recebe o cadastro de uma quantidade ilimitada de proprietários e seus respectivos apartamentos(número e nome do proprietário) 
+#Guarde essas informações em um dicionário, onde a chave de busca é o número do apto.
+#Para encerrar a digitação o númeor do apartamento sera -1
+#Em seguida, deve-se mostrar uma listagem em ordem crescende de apartamento: apartamento - nome do proprietário
+#No final apresente a quantidade total de apartamentos listados 
+
+proprietarios = {}
+
+while True:
+    apartamento = int(input("Digite o número do apartamento (-1 para sair): "))
+    if apartamento != -1:
+        proprietario = input("Digite o nome do proprietário: ")
+        proprietarios.update({apartamento: proprietario})
+    else:
+        break
+
+edificio = dict(sorted(proprietarios.items()))
+
+print("\nListagem de apartamentos e proprietários:")
+for chave, valor in edificio.items():
+    print(f"Apartamento {chave} - Proprietário: {valor}")
+
+print(f"\nTotal de apartamentos: {len(edificio)}")
