@@ -1,0 +1,51 @@
+#TUPLAS 
+#são coleções (caracteres, números, strings...) ordenados, separados por vírgula e que estão dentro de parenteses.
+#Tuplas são imutáveis, ou seja, não podem ser alteradas após a criação.
+
+#Exemplo de tupla homogênea (mesmo tipo de dado)
+#(1,2,3,4, ...)
+#('a','b','c', ...)
+
+#Exemplo de tupla heterogênea (diferentes tipos de dados)
+#(1, 'a', 2, 'b', 'texto1', (1,2,3) ...)
+
+montadoras = ("Ferrari", "Fiat", "Mercedes", "Renault")
+#print(montadoras) #imprime a tupla completa 
+
+tupla_mista = (2025, 34.56, montadoras, "Python")
+#print(tupla_mista) #tupla completa: (2025, 34.56, ('Ferrari', 'Fiat', 'Mercedes', 'Renault'), 'Python')
+
+#OPERAÇÕES BÁSICAS 
+#concatenação de tuplas
+#verificar se um elemento está na tupla
+
+#FUNÇÃO TUPLE()
+#cria uma tupla a partir de um iterável (lista, string, dicionário, conjunto)
+navegadores = 'Vikings'
+texto_para_tupla = tuple(navegadores) #('V', 'i', 'k', 'i', 'n', 'g', 's')
+
+#lista para tupla:
+lista = [23, 34, 'nome', 'a', 2.45]
+lista_para_tupla = tuple(lista) 
+#(23, 34, 'nome', 'a', 2.45)
+
+#tuplas aninhadas
+letras = ('a', 'b', 'c')
+numeros = (1, 2, 3)
+tupla_aninhada = (letras, numeros)
+#(('a', 'b', 'c'), (1, 2, 3))
+
+#fatiamento 
+#tupla[inicio:fim:passo]
+cores = ('azul', 'amarelo', 'verde', 'vermelho', 'preto', 'branco')
+#print(cores[1:4]) #('amarelo', 'verde', 'vermelho')
+
+#FUNÇÕES BUILT-IN
+#len() - retorna o tamanho da tupla
+#sum () - soma os elementos da tupla (apenas números)
+#max() - retorna o maior valor da tupla
+#sorted() - retorna uma lista com os elementos da tupla ordenados
+
+#MÉTODOS
+#count() - conta quantas vezes um elemento aparece na tupla
+#index() - retorna o índice da primeira ocorrência de um elemento na tupla
