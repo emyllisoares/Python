@@ -1,0 +1,23 @@
+#Fazer um programa que recebe uma quantidade ilimitada de idade de pessoas
+#Guardar essas idades em uma lista 
+#Para encerrar a digitação das idades, o usuário deve digitar -1
+#Em seguida, deve-se gerar uma tupla de idades, a partir da lista
+#Deve-se mostrar as seguintes informações, sonsultando a tupla: quantidade de idades digitadas e a média.
+
+lista_idades = []
+
+while True:
+    idade = int(input("Digite uma idade (-1 para encerrar): "))
+    if idade != -1:
+        lista_idades.append(idade)
+    else: 
+        break
+
+tupla_idades = tuple(lista_idades)
+
+quantidade_idades = len(tupla_idades)
+total = sum(tupla_idades)
+media = total / quantidade_idades
+
+print(f"\nQuantidade de idades digitadas: {quantidade_idades}")
+print(f"A média das idades é: {media:.2f}")
