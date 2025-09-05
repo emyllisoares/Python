@@ -1,0 +1,19 @@
+#Programa que recebe uma quantidade ilimitadaa de nome de cidades e guarde essas cidades em uma lista
+#Para encerrar a digitação, o usuário deve digitar "sair"
+#Em seguida, deve-se ordenar essas lista de cidades em ordem alfabética 
+#E exibir na tela a lista ordenada 1 por linha
+
+cidades = []
+while True: 
+    cidade = input("Digite uma cidade: ")
+    if cidade == 'sair':
+        break
+    else: 
+        cidades.append(cidade)
+if len(cidades) > 0:
+    cidades.sort()
+    print("\nCidades em ordem alfabética:")
+    for cidade in cidades:
+        print(cidade)
+else:
+    print("Nenhuma cidade foi digitada.")
