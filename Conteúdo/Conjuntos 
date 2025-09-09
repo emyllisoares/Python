@@ -1,0 +1,23 @@
+#CONJUNTOS (SETS)
+#São coleções não ordenadas (sem índice) que não permitem a duplicação de elementos
+#São delimitados por chaves {}  
+#Suportam as operações matemáticas de união, interseção e diferença
+#São mutáveis, ou seja, podem ser alterados após a criação
+
+#Funções BUILT-IN
+#len() - retorna o tamanho do conjunto
+#sorted() - retorna uma lista com os elementos do conjunto ordenados
+
+#Métodos 
+#add() - adiciona um elemento ao conjunto
+#clear() - remove todos os elementos do conjunto
+#difference() - retorna a diferença entre dois conjuntos
+#intersection() - retorna a interseção entre dois conjuntos
+#isdisjoint() - verifica se dois conjuntos são disjuntos (não possuem elementos em comum)
+#issubset() - verifica se um conjunto é subconjunto de outro
+#issuperset() - verifica se um conjunto é superconjunto de outro
+#pop() - remove e retorna um elemento aleatório do conjunto
+#symmetric_difference() - retorna a diferença simétrica entre dois conjuntos
+#union() - retorna a união de dois conjuntos
+#discard() - remove um elemento do conjunto (sem gerar erro se o elemento não existir)
+#clear() - remove todos os elementos do conjunto
